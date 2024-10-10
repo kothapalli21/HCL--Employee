@@ -1,0 +1,125 @@
+/* 
+.loginPage {
+    background: url('Images/employeems.jpeg');
+    background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)), url("Images/employeems.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+
+}
+.loginForm{
+    background-color: rgba(1, 32, 93, 0.6);
+    color: white;
+}
+
+ul li :hover {
+    background-color: grey;
+}
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+*/
+
+/* Background image for login and dashboard pages */
+.loginPage,
+.dashboard {
+    background: url('Images/employeems.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form and dashboard content */
+.loginForm,
+.dashboard-content {
+    background-color: rgba(1, 32, 93, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form inputs and buttons */
+.loginForm input,
+.dashboard-content input,
+.loginForm button,
+.dashboard-content button {
+    margin-bottom: 15px;
+}
+
+ul li :hover {
+    background-color: grey;
+}
+
+.loginForm input,
+.dashboard-content input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.loginForm button,
+.dashboard-content button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginForm button:hover,
+.dashboard-content button:hover {
+    background-color: #45a049;
+}
+
+/* Links */
+.loginForm a,
+.dashboard-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.loginForm a:hover,
+.dashboard-content a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect for menu items */
+.dashboard-content ul li:hover {
+    background-color: grey;
+}
+
+/* Additional styles */
+
+/* Employee image */
+.employee_image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding-top: 56px; /* Height of mobile navbar */
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
